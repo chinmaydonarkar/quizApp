@@ -6,7 +6,6 @@
       "correctOption": 1,
       "points": 10
     },
-  
     {
       "question": "Which company invented React?",
       "options": ["Google", "Apple", "Netflix", "Facebook"],
@@ -27,12 +26,7 @@
     },
     {
       "question": "How does data flow naturally in React apps?",
-      "options": [
-        "From parents to children",
-        "From children to parents",
-        "Both ways",
-        "The developers decides"
-      ],
+      "options": ["From parents to children", "From children to parents", "Both ways", "The developers decides"],
       "correctOption": 0,
       "points": 10
     },
@@ -44,58 +38,33 @@
     },
     {
       "question": "When to use derived state?",
-      "options": [
-        "Whenever the state should not trigger a re-render",
-        "Whenever the state can be synchronized with an effect",
-        "Whenever the state should be accessible to all components",
-        "Whenever the state can be computed from another state variable"
-      ],
+      "options": ["Whenever the state should not trigger a re-render", "Whenever the state can be synchronized with an effect", "Whenever the state should be accessible to all components", "Whenever the state can be computed from another state variable"],
       "correctOption": 3,
-      "points": 30
+      "points": 10
     },
     {
       "question": "What triggers a UI re-render in React?",
-      "options": [
-        "Running an effect",
-        "Passing props",
-        "Updating state",
-        "Adding event listeners to DOM elements"
-      ],
+      "options": ["Running an effect", "Passing props", "Updating state", "Adding event listeners to DOM elements"],
       "correctOption": 2,
-      "points": 20
+      "points": 10
     },
     {
-      "question": "When do we directly \"touch\" the DOM in React?",
-      "options": [
-        "When we need to listen to an event",
-        "When we need to change the UI",
-        "When we need to add styles",
-        "Almost never"
-      ],
+      "question": "When do we directly 'touch' the DOM in React?",
+      "options": ["When we need to listen to an event", "When we need to change the UI", "When we need to add styles", "Almost never"],
       "correctOption": 3,
-      "points": 20
+      "points": 10
     },
     {
       "question": "In what situation do we use a callback to update state?",
-      "options": [
-        "When updating the state will be slow",
-        "When the updated state is very data-intensive",
-        "When the state update should happen faster",
-        "When the new state depends on the previous state"
-      ],
+      "options": ["When updating the state will be slow", "When the updated state is very data-intensive", "When the state update should happen faster", "When the new state depends on the previous state"],
       "correctOption": 3,
-      "points": 30
+      "points": 10
     },
     {
       "question": "If we pass a function to useState, when will that function be called?",
-      "options": [
-        "On each re-render",
-        "Each time we update the state",
-        "Only on the initial render",
-        "The first time we update the state"
-      ],
+      "options": ["On each re-render", "Each time we update the state", "Only on the initial render", "The first time we update the state"],
       "correctOption": 2,
-      "points": 30
+      "points": 10
     },
     {
       "question": "Which hook to use for an API request on the component's initial render?",
@@ -105,78 +74,1498 @@
     },
     {
       "question": "Which variables should go into the useEffect dependency array?",
-      "options": [
-        "Usually none",
-        "All our state variables",
-        "All state and props referenced in the effect",
-        "All variables needed for clean up"
-      ],
+      "options": ["Usually none", "All our state variables", "All state and props referenced in the effect", "All variables needed for clean up"],
       "correctOption": 2,
-      "points": 30
+      "points": 10
     },
     {
       "question": "An effect will always run on the initial render.",
-      "options": [
-        "True",
-        "It depends on the dependency array",
-        "False",
-        "In depends on the code in the effect"
-      ],
+      "options": ["True", "It depends on the dependency array", "False", "It depends on the code in the effect"],
       "correctOption": 0,
-      "points": 30
+      "points": 10
     },
     {
       "question": "When will an effect run if it doesn't have a dependency array?",
-      "options": [
-        "Only when the component mounts",
-        "Only when the component unmounts",
-        "The first time the component re-renders",
-        "Each time the component is re-rendered"
-      ],
+      "options": ["Only when the component mounts", "Only when the component unmounts", "The first time the component re-renders", "Each time the component is re-rendered"],
       "correctOption": 3,
-      "points": 20
-    }
-  ],
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  
-  "react": [{
-    "question": "When to use derived state?",
-    "options": [
-      "Whenever the state should not trigger a re-render",
-      "Whenever the state can be synchronized with an effect",
-      "Whenever the state should be accessible to all components",
-      "Whenever the state can be computed from another state variable"
-    ],
-    "correctOption": 3,
-    "points": 30
-  },
-  {
-    "question": "What triggers a UI re-render in React?",
-    "options": [
-      "Running an effect",
-      "Passing props",
-      "Updating state",
-      "Adding event listeners to DOM elements"
-    ],
-    "correctOption": 2,
-    "points": 20
-  },
-  {
-    "question": "When do we directly \"touch\" the DOM in React?",
-    "options": [
-      "When we need to listen to an event",
-      "When we need to change the UI",
-      "When we need to add styles",
-      "Almost never"
-    ],
-    "correctOption": 3,
-    "points": 20
-  }]
+      "points": 10
+    },
+    {
+      "question": "What does React use to manage the state of components?",
+      "options": ["Reducer", "Store", "State", "Context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which lifecycle method is invoked immediately after a component is mounted?",
+      "options": ["componentDidMount", "componentWillMount", "componentDidUpdate", "componentWillUnmount"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of keys in React lists?",
+      "options": ["For styling", "To uniquely identify list items", "To handle events", "For state management"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to update the state in a React component?",
+      "options": ["updateState", "setState", "changeState", "modifyState"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a common use case for refs in React?",
+      "options": ["To manage state", "To handle events", "To access DOM elements", "To create components"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How can you handle forms in React?",
+      "options": ["Using state", "Using refs", "Using props", "Using events"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does JSX stand for?",
+      "options": ["JavaScript XML", "JavaScript Extension", "JavaScript Syntax", "JavaScript eXtension"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which hook is used for accessing lifecycle methods in functional components?",
+      "options": ["useState", "useEffect", "useContext", "useRef"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the main advantage of using React over plain JavaScript?",
+      "options": ["It is faster", "It has better error handling", "It allows for reusable components", "It has more libraries"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How can you optimize performance in a large React application?",
+      "options": ["Using large state variables", "Using inline functions", "Using useMemo and useCallback hooks", "Using heavy CSS animations"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which tool can be used for testing React components?",
+      "options": ["Mocha", "Jasmine", "Jest", "Karma"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of PropTypes in React?",
+      "options": ["To handle state", "To validate props", "To handle events", "To manage context"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the main difference between a class component and a functional component?",
+      "options": ["Functional components can use state", "Class components can use hooks", "Class components can use state and lifecycle methods", "Functional components have a render method"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is React Context used for?",
+      "options": ["To pass props", "To manage component state", "To handle lifecycle methods", "To provide global state"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which hook would you use to manage complex state logic?",
+      "options": ["useState", "useEffect", "useContext", "useReducer"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How can you handle side effects in a React component?",
+      "options": ["Using state", "Using useEffect", "Using props", "Using reducers"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does 'lifting state up' mean in React?",
+      "options": ["Moving state to a higher-level component", "Moving state to a lower-level component", "Sharing state between components", "Using context for state"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is a 'pure' component in React?",
+      "options": ["A component without state", "A component that does not re-render unnecessarily", "A component that uses hooks", "A component that uses context"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of React.memo?",
+      "options": ["To create memoized state", "To memoize functional components", "To handle side effects", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is true about React Hooks?",
+      "options": ["They can be used in class components", "They allow you to use state and other React features without writing a class", "They replace Redux", "They can be used to manipulate the DOM"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you ensure a function inside a functional component maintains the same reference?",
+      "options": ["Using useState", "Using useEffect", "Using useCallback", "Using useMemo"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which hook can be used to access the previous state or props in a functional component?",
+      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useMemo hook?",
+      "options": ["To manage state", "To handle side effects", "To memoize values", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How can you pass a method from a parent to a child component?",
+      "options": ["Using state", "Using refs", "Using props", "Using context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you bind methods in a React class component?",
+      "options": ["Using constructor binding", "Using arrow functions", "Using bind method", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What does the useReducer hook return?",
+      "options": ["A state value", "A dispatch function", "An array with state and dispatch", "A function to update state"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is a custom hook in React?",
+      "options": ["A built-in hook", "A hook that manages state", "A function that calls hooks", "A hook that accesses context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you pass state between sibling components?",
+      "options": ["Using props", "Using context", "Using state", "Using refs"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the use of the useLayoutEffect hook?",
+      "options": ["To manage state", "To handle side effects", "To run effects after DOM updates", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does React's virtual DOM do?",
+      "options": ["Manages state", "Handles side effects", "Makes DOM updates more efficient", "Accesses context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of defaultProps in React?",
+      "options": ["To set default state", "To set default props", "To handle side effects", "To access context"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you define defaultProps in a functional component?",
+      "options": ["Using defaultProps property", "Using props", "Using useEffect", "Using default"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useImperativeHandle hook?",
+      "options": ["To manage state", "To handle side effects", "To customize refs", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you manage global state in a React application?",
+      "options": ["Using local state", "Using props", "Using context", "Using refs"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the useContext hook return?",
+      "options": ["A state value", "A context value", "A function", "An array"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of a render prop?",
+      "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you create a ref in a functional component?",
+      "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useEffect and useLayoutEffect?",
+      "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the useRef hook return?",
+      "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the main benefit of React's virtual DOM?",
+      "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you update state in a functional component?",
+      "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How can you ensure a component only re-renders when necessary?",
+      "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you pass a method from a parent to a child component?",
+      "options": ["Using state", "Using refs", "Using props", "Using context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the useContext hook return?",
+      "options": ["A state value", "A context value", "A function", "An array"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of a render prop?",
+      "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you create a ref in a functional component?",
+      "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useEffect and useLayoutEffect?",
+      "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the useRef hook return?",
+      "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the main benefit of React's virtual DOM?",
+      "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you update state in a functional component?",
+      "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How can you ensure a component only re-renders when necessary?",
+      "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useDebugValue hook?",
+      "options": ["To manage state", "To handle side effects", "To debug custom hooks", "To access context"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you handle asynchronous operations in a React component?",
+      "options": ["Using useState", "Using useEffect", "Using async/await", "Using useReducer"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useEffect cleanup function?",
+      "options": ["To manage state", "To handle side effects", "To prevent memory leaks", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the main purpose of React Router?",
+      "options": ["To manage state", "To handle side effects", "To create single-page applications", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useState and useReducer?",
+      "options": ["useState is for global state, useReducer is for local state", "useState is for local state, useReducer is for complex state logic", "useState is for complex state logic, useReducer is for simple state", "useState and useReducer are interchangeable"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useContext hook?",
+      "options": ["To manage state", "To handle side effects", "To access context values", "To create context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of React's Context API?",
+      "options": ["To manage state", "To handle side effects", "To pass data through the component tree without props", "To access the DOM"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you avoid prop drilling in React?",
+      "options": ["Using useState", "Using useEffect", "Using Context API", "Using useReducer"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you handle errors in a React component?",
+      "options": ["Using try/catch", "Using componentDidCatch", "Using error boundaries", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useMemo hook?",
+      "options": ["To manage state", "To handle side effects", "To memoize expensive calculations", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useCallback hook?",
+      "options": ["To manage state", "To handle side effects", "To memoize functions", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you update the state of a parent component from a child component?",
+      "options": ["Using props", "Using context", "Using state", "Using refs"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useReducer hook?",
+      "options": ["To manage state", "To handle side effects", "To access context", "To create reducers"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useRef hook?",
+      "options": ["To manage state", "To handle side effects", "To access DOM elements", "To create refs"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useEffect hook?",
+      "options": ["To manage state", "To handle side effects", "To access context", "To create effects"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you pass state between sibling components?",
+      "options": ["Using props", "Using context", "Using state", "Using refs"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useLayoutEffect hook?",
+      "options": ["To manage state", "To handle side effects", "To run effects after DOM updates", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does React's virtual DOM do?",
+      "options": ["Manages state", "Handles side effects", "Makes DOM updates more efficient", "Accesses context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of defaultProps in React?",
+      "options": ["To set default state", "To set default props", "To handle side effects", "To access context"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you define defaultProps in a functional component?",
+      "options": ["Using defaultProps property", "Using props", "Using useEffect", "Using default"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useImperativeHandle hook?",
+      "options": ["To manage state", "To handle side effects", "To customize refs", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you manage global state in a React application?",
+      "options": ["Using local state", "Using props", "Using context", "Using refs"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the useContext hook return?",
+      "options": ["A state value", "A context value", "A function", "An array"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of a render prop?",
+      "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you create a ref in a functional component?",
+      "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useEffect and useLayoutEffect?",
+      "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the useRef hook return?",
+      "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the main benefit of React's virtual DOM?",
+      "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you update state in a functional component?",
+      "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How can you ensure a component only re-renders when necessary?",
+      "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useDebugValue hook?",
+      "options": ["To manage state", "To handle side effects", "To debug custom hooks", "To access context"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you handle asynchronous operations in a React component?",
+      "options": ["Using useState", "Using useEffect", "Using async/await", "Using useReducer"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useEffect cleanup function?",
+      "options": ["To manage state", "To handle side effects", "To prevent memory leaks", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the main purpose of React Router?",
+      "options": ["To manage state", "To handle side effects", "To create single-page applications", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useState and useReducer?",
+      "options": ["useState is for global state, useReducer is for local state", "useState is for local state, useReducer is for complex state logic", "useState is for complex state logic, useReducer is for simple state", "useState and useReducer are interchangeable"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useContext hook?",
+      "options": ["To manage state", "To handle side effects", "To access context values", "To create context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of React's Context API?",
+      "options": ["To manage state", "To handle side effects", "To pass data through the component tree without props", "To access the DOM"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you avoid prop drilling in React?",
+      "options": ["Using useState", "Using useEffect", "Using Context API", "Using useReducer"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you handle errors in a React component?",
+      "options": ["Using try/catch", "Using componentDidCatch", "Using error boundaries", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useMemo hook?",
+      "options": ["To manage state", "To handle side effects", "To memoize expensive calculations", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useCallback hook?",
+      "options": ["To manage state", "To handle side effects", "To memoize functions", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you update the state of a parent component from a child component?",
+      "options": ["Using props", "Using context", "Using state", "Using refs"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useReducer hook?",
+      "options": ["To manage state", "To handle side effects", "To access context", "To create reducers"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useRef hook?",
+      "options": ["To manage state", "To handle side effects", "To access DOM elements", "To create refs"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useEffect hook?",
+      "options": ["To manage state", "To handle side effects", "To access context", "To create effects"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you pass state between sibling components?",
+      "options": ["Using props", "Using context", "Using state", "Using refs"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useLayoutEffect hook?",
+      "options": ["To manage state", "To handle side effects", "To run effects after DOM updates", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does React's virtual DOM do?",
+      "options": ["Manages state", "Handles side effects", "Makes DOM updates more efficient", "Accesses context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of defaultProps in React?",
+      "options": ["To set default state", "To set default props", "To handle side effects", "To access context"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you define defaultProps in a functional component?",
+      "options": ["Using defaultProps property", "Using props", "Using useEffect", "Using default"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useImperativeHandle hook?",
+      "options": ["To manage state", "To handle side effects", "To customize refs", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you manage global state in a React application?",
+      "options": ["Using local state", "Using props", "Using context", "Using refs"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the useContext hook return?",
+      "options": ["A state value", "A context value", "A function", "An array"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of a render prop?",
+      "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you create a ref in a functional component?",
+      "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useEffect and useLayoutEffect?",
+      "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the useRef hook return?",
+      "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the main benefit of React's virtual DOM?",
+      "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you update state in a functional component?",
+      "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How can you ensure a component only re-renders when necessary?",
+      "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useDebugValue hook?",
+      "options": ["To manage state", "To handle side effects", "To debug custom hooks", "To access context"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you handle asynchronous operations in a React component?",
+      "options": ["Using useState", "Using useEffect", "Using async/await", "Using useReducer"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useEffect cleanup function?",
+      "options": ["To manage state", "To handle side effects", "To prevent memory leaks", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the main purpose of React Router?",
+      "options": ["To manage state", "To handle side effects", "To create single-page applications", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useState and useReducer?",
+      "options": ["useState is for global state, useReducer is for local state", "useState is for local state, useReducer is for complex state logic", "useState is for complex state logic, useReducer is for simple state", "useState and useReducer are interchangeable"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useContext hook?",
+      "options": ["To manage state", "To handle side effects", "To access context values", "To create context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of React's Context API?",
+      "options": ["To manage state", "To handle side effects", "To pass data through the component tree without props", "To access the DOM"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you avoid prop drilling in React?",
+      "options": ["Using useState", "Using useEffect", "Using Context API", "Using useReducer"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you handle errors in a React component?",
+      "options": ["Using try/catch", "Using componentDidCatch", "Using error boundaries", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useMemo hook?",
+      "options": ["To manage state", "To handle side effects", "To memoize expensive calculations", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useCallback hook?",
+      "options": ["To manage state", "To handle side effects", "To memoize functions", "To access context"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you update the state of a parent component from a child component?",
+      "options": ["Using props", "Using context", "Using state", "Using refs"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useReducer hook?",
+      "options": ["To manage state", "To handle side effects", "To access context", "To create reducers"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useRef hook?",
+      "options": ["To manage state", "To handle side effects", "To access DOM elements", "To create refs"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useEffect hook?",
+      "options": ["To manage state", "To handle side effects", "To access context", "To create effects"],
+      "correctOption": 1,
+      "points": 10
+    },
+      {
+        "question": "What is the purpose of the useDebugValue hook?",
+        "options": ["To manage state", "To handle side effects", "To debug custom hooks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle asynchronous operations in a React component?",
+        "options": ["Using useState", "Using useEffect", "Using async/await", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect cleanup function?",
+        "options": ["To manage state", "To handle side effects", "To prevent memory leaks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main purpose of React Router?",
+        "options": ["To manage state", "To handle side effects", "To create single-page applications", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useState and useReducer?",
+        "options": ["useState is for global state, useReducer is for local state", "useState is for local state, useReducer is for complex state logic", "useState is for complex state logic, useReducer is for simple state", "useState and useReducer are interchangeable"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useContext hook?",
+        "options": ["To manage state", "To handle side effects", "To access context values", "To create context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of React's Context API?",
+        "options": ["To manage state", "To handle side effects", "To pass data through the component tree without props", "To access the DOM"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you avoid prop drilling in React?",
+        "options": ["Using useState", "Using useEffect", "Using Context API", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle errors in a React component?",
+        "options": ["Using try/catch", "Using componentDidCatch", "Using error boundaries", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useMemo hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize expensive calculations", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useCallback hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize functions", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update the state of a parent component from a child component?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useReducer hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create reducers"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useRef hook?",
+        "options": ["To manage state", "To handle side effects", "To access DOM elements", "To create refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create effects"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you pass state between sibling components?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useLayoutEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To run effects after DOM updates", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does React's virtual DOM do?",
+        "options": ["Manages state", "Handles side effects", "Makes DOM updates more efficient", "Accesses context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of defaultProps in React?",
+        "options": ["To set default state", "To set default props", "To handle side effects", "To access context"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you define defaultProps in a functional component?",
+        "options": ["Using defaultProps property", "Using props", "Using useEffect", "Using default"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useImperativeHandle hook?",
+        "options": ["To manage state", "To handle side effects", "To customize refs", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you manage global state in a React application?",
+        "options": ["Using local state", "Using props", "Using context", "Using refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does the useContext hook return?",
+        "options": ["A state value", "A context value", "A function", "An array"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of a render prop?",
+        "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you create a ref in a functional component?",
+        "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useEffect and useLayoutEffect?",
+        "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What does the useRef hook return?",
+        "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main benefit of React's virtual DOM?",
+        "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update state in a functional component?",
+        "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How can you ensure a component only re-renders when necessary?",
+        "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useDebugValue hook?",
+        "options": ["To manage state", "To handle side effects", "To debug custom hooks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle asynchronous operations in a React component?",
+        "options": ["Using useState", "Using useEffect", "Using async/await", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect cleanup function?",
+        "options": ["To manage state", "To handle side effects", "To prevent memory leaks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main purpose of React Router?",
+        "options": ["To manage state", "To handle side effects", "To create single-page applications", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useState and useReducer?",
+        "options": ["useState is for global state, useReducer is for local state", "useState is for local state, useReducer is for complex state logic", "useState is for complex state logic, useReducer is for simple state", "useState and useReducer are interchangeable"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useContext hook?",
+        "options": ["To manage state", "To handle side effects", "To access context values", "To create context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of React's Context API?",
+        "options": ["To manage state", "To handle side effects", "To pass data through the component tree without props", "To access the DOM"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you avoid prop drilling in React?",
+        "options": ["Using useState", "Using useEffect", "Using Context API", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle errors in a React component?",
+        "options": ["Using try/catch", "Using componentDidCatch", "Using error boundaries", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useMemo hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize expensive calculations", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useCallback hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize functions", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update the state of a parent component from a child component?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useReducer hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create reducers"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useRef hook?",
+        "options": ["To manage state", "To handle side effects", "To access DOM elements", "To create refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create effects"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you pass state between sibling components?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useLayoutEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To run effects after DOM updates", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does React's virtual DOM do?",
+        "options": ["Manages state", "Handles side effects", "Makes DOM updates more efficient", "Accesses context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of defaultProps in React?",
+        "options": ["To set default state", "To set default props", "To handle side effects", "To access context"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you define defaultProps in a functional component?",
+        "options": ["Using defaultProps property", "Using props", "Using useEffect", "Using default"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useImperativeHandle hook?",
+        "options": ["To manage state", "To handle side effects", "To customize refs", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you manage global state in a React application?",
+        "options": ["Using local state", "Using props", "Using context", "Using refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does the useContext hook return?",
+        "options": ["A state value", "A context value", "A function", "An array"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of a render prop?",
+        "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you create a ref in a functional component?",
+        "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useEffect and useLayoutEffect?",
+        "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What does the useRef hook return?",
+        "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main benefit of React's virtual DOM?",
+        "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update state in a functional component?",
+        "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How can you ensure a component only re-renders when necessary?",
+        "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useDebugValue hook?",
+        "options": ["To manage state", "To handle side effects", "To debug custom hooks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle asynchronous operations in a React component?",
+        "options": ["Using useState", "Using useEffect", "Using async/await", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect cleanup function?",
+        "options": ["To manage state", "To handle side effects", "To prevent memory leaks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main purpose of React Router?",
+        "options": ["To manage state", "To handle side effects", "To create single-page applications", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useState and useReducer?",
+        "options": ["useState is for global state, useReducer is for local state", "useState is for local state, useReducer is for complex state logic", "useState is for complex state logic, useReducer is for simple state", "useState and useReducer are interchangeable"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useContext hook?",
+        "options": ["To manage state", "To handle side effects", "To access context values", "To create context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of React's Context API?",
+        "options": ["To manage state", "To handle side effects", "To pass data through the component tree without props", "To access the DOM"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you avoid prop drilling in React?",
+        "options": ["Using useState", "Using useEffect", "Using Context API", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle errors in a React component?",
+        "options": ["Using try/catch", "Using componentDidCatch", "Using error boundaries", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useMemo hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize expensive calculations", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useCallback hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize functions", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update the state of a parent component from a child component?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useReducer hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create reducers"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useRef hook?",
+        "options": ["To manage state", "To handle side effects", "To access DOM elements", "To create refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create effects"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you pass state between sibling components?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useLayoutEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To run effects after DOM updates", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does React's virtual DOM do?",
+        "options": ["Manages state", "Handles side effects", "Makes DOM updates more efficient", "Accesses context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of defaultProps in React?",
+        "options": ["To set default state", "To set default props", "To handle side effects", "To access context"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you define defaultProps in a functional component?",
+        "options": ["Using defaultProps property", "Using props", "Using useEffect", "Using default"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useImperativeHandle hook?",
+        "options": ["To manage state", "To handle side effects", "To customize refs", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you manage global state in a React application?",
+        "options": ["Using local state", "Using props", "Using context", "Using refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does the useContext hook return?",
+        "options": ["A state value", "A context value", "A function", "An array"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of a render prop?",
+        "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you create a ref in a functional component?",
+        "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useEffect and useLayoutEffect?",
+        "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What does the useRef hook return?",
+        "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main benefit of React's virtual DOM?",
+        "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update state in a functional component?",
+        "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How can you ensure a component only re-renders when necessary?",
+        "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useDebugValue hook?",
+        "options": ["To manage state", "To handle side effects", "To debug custom hooks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle asynchronous operations in a React component?",
+        "options": ["Using useState", "Using useEffect", "Using async/await", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect cleanup function?",
+        "options": ["To manage state", "To handle side effects", "To prevent memory leaks", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main purpose of React Router?",
+        "options": ["To manage state", "To handle side effects", "To create single-page applications", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useState and useReducer?",
+        "options": ["useState is for global state, useReducer is for local state", "useState is for local state, useReducer is for complex state logic", "useState is for complex state logic, useReducer is for simple state", "useState and useReducer are interchangeable"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useContext hook?",
+        "options": ["To manage state", "To handle side effects", "To access context values", "To create context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of React's Context API?",
+        "options": ["To manage state", "To handle side effects", "To pass data through the component tree without props", "To access the DOM"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you avoid prop drilling in React?",
+        "options": ["Using useState", "Using useEffect", "Using Context API", "Using useReducer"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you handle errors in a React component?",
+        "options": ["Using try/catch", "Using componentDidCatch", "Using error boundaries", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useMemo hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize expensive calculations", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useCallback hook?",
+        "options": ["To manage state", "To handle side effects", "To memoize functions", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update the state of a parent component from a child component?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useReducer hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create reducers"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useRef hook?",
+        "options": ["To manage state", "To handle side effects", "To access DOM elements", "To create refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To access context", "To create effects"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you pass state between sibling components?",
+        "options": ["Using props", "Using context", "Using state", "Using refs"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useLayoutEffect hook?",
+        "options": ["To manage state", "To handle side effects", "To run effects after DOM updates", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does React's virtual DOM do?",
+        "options": ["Manages state", "Handles side effects", "Makes DOM updates more efficient", "Accesses context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of defaultProps in React?",
+        "options": ["To set default state", "To set default props", "To handle side effects", "To access context"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you define defaultProps in a functional component?",
+        "options": ["Using defaultProps property", "Using props", "Using useEffect", "Using default"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of the useImperativeHandle hook?",
+        "options": ["To manage state", "To handle side effects", "To customize refs", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you manage global state in a React application?",
+        "options": ["Using local state", "Using props", "Using context", "Using refs"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does the useContext hook return?",
+        "options": ["A state value", "A context value", "A function", "An array"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of a render prop?",
+        "options": ["To manage state", "To handle side effects", "To share code between components", "To access context"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you create a ref in a functional component?",
+        "options": ["Using createRef", "Using useRef", "Using useState", "Using useEffect"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the difference between useEffect and useLayoutEffect?",
+        "options": ["useEffect runs after render, useLayoutEffect runs before paint", "useEffect runs before render, useLayoutEffect runs after paint", "useEffect runs during render, useLayoutEffect runs after paint", "useEffect runs after render, useLayoutEffect runs after paint"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What does the useRef hook return?",
+        "options": ["A state value", "A context value", "A mutable ref object", "An array"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the main benefit of React's virtual DOM?",
+        "options": ["Increased security", "Easier to learn", "Performance optimization", "Better state management"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "How do you update state in a functional component?",
+        "options": ["Using setState", "Using useState", "Using stateUpdate", "Using changeState"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How can you ensure a component only re-renders when necessary?",
+        "options": ["Using shouldComponentUpdate", "Using React.memo", "Using PureComponent", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      }
+    ]
   }
+  
