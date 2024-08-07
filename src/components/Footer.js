@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Footer({ children }) {
-  return <footer>{children}</footer>;
+  return (
+    <div className="flex justify-between">
+      {children}
+    </div>
+  );
 }
 
 export default Footer;

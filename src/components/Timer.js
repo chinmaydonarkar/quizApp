@@ -21,12 +21,13 @@ function Timer() {
   );
 
   return (
-    <div className="timer">
+    <div className="timer text-xl font-bold text-blue-600 bg-white p-4 rounded-md shadow-md w-24 text-center">
       {mins < 10 && "0"}
       {mins}:{seconds < 10 && "0"}
       {seconds}
     </div>
   );
 }
+
 
 export default Timer;

@@ -9,11 +9,12 @@ function Question() {
   if (!question) return null;
 
   return (
-    <div>
-      <h4>{question.question}</h4>
+    <div className="p-6 bg-white shadow-md rounded-lg mb-4">
+      <h4 className="text-xl font-bold mb-4 text-gray-900">{question.question}</h4>
       <Options question={question} />
     </div>
   );
 }
+
 
 export default Question;

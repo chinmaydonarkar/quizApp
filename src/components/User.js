@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
 function User() {
-  const { user, logout } = useAuth();
+  const { user, logoutSystem } = useAuth();
   const navigate = useNavigate();
 
   function handleClick() {
-    logout();
+    logoutSystem();
     navigate("/");
   }
 

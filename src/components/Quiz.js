@@ -50,16 +50,17 @@ import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
 import { useQuiz } from "../contexts/QuizContext";
+import User from "./User";
 
 export default function Quiz({quizType}) {
   const { status, dispatch, shuffleArray} = useQuiz();
 
   useEffect(() => {
     dispatch({ type: "dataRequest" }); // Optional: if you want to set a status for loading
-    fetch(`http://localhost:5000/${quizType}`)
+    fetch(`http://localhost:5000/questions`)
       .then((res) => res.json())
       .then((data) => {
-        
+
         data = shuffleArray(data);
         return dispatch({ type: "dataReceived", payload: data})
       
@@ -74,7 +75,8 @@ export default function Quiz({quizType}) {
   // };
 
   return (
-    <div className="app">
+    <div className="app place-items-center mt-32 mx-96">
+      {/* <User/> */}
       <Main>
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
@@ -83,7 +85,7 @@ export default function Quiz({quizType}) {
 
         {status === "active" && (
           <>
-            <Progress />
+            <Progress/>
             <Question />
             <Footer>
               <Timer />
